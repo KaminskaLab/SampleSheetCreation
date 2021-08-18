@@ -13,4 +13,4 @@ indexes_10x <- lapply(nr, function(x){return(idxRef[x,1])})
 
 sheet[,6] <- unlist(indexes_10x)
 
-write.table(x = sheet, file = "lower_new.csv", col.names = FALSE, na = "", sep=",")
+write.table(x = sheet, file = "lower_new.csv", row.names = FALSE, col.names = FALSE, na = "", sep=",")
